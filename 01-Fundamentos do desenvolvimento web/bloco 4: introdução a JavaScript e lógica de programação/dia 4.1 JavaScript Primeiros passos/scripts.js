@@ -1,9 +1,13 @@
-let a = 50;
-let b = 80;
+let a = 234;
+let b = 97;
+let c = 484;
 
-if(a > b){
-  console.log("A is bigger than B");
+if(a > b && a > c){
+  console.log("A is bigger");
 }
-else{
-  console.log("B is bigger than A");
+else if(b > a && b > c){
+  console.log("B is bigger");
+}
+else {
+  console.log("C is bigger");
 }
