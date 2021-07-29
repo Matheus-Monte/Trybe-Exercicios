@@ -1,13 +1,11 @@
-let a = 234;
-let b = 97;
-let c = 484;
+let number = 0
 
-if(a > b && a > c){
-  console.log("A is bigger");
+if(number > 0){
+  console.log("positivo");
 }
-else if(b > a && b > c){
-  console.log("B is bigger");
+else if(number < 0){
+  console.log("negativo");
 }
-else {
-  console.log("C is bigger");
+else{
+  console.log("zero");
 }
