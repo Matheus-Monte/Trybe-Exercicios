@@ -1,8 +1,9 @@
-let a = 15;
-let b = 5;
+let a = 50;
+let b = 80;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+if(a > b){
+  console.log("A is bigger than B");
+}
+else{
+  console.log("B is bigger than A");
+}
