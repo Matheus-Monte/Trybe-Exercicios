@@ -1,17 +1,23 @@
-let anguloA = 65;
-let anguloB = 100;
-let anguloC = 15;
+let pecaxadrez = 'rainha';
 
-let somaDosAngulos = anguloA + anguloB + anguloC;
+switch(pecaxadrez) {
+  case 'bispo': console.log('move-se na diagonal');
+   break;
 
-let TodosAngulosPositivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
+  case 'rainha': console.log('move-se em todas as direções');
+   break;
 
-if(TodosAngulosPositivos){
-  if(somaDosAngulos === 180) {
-    console.log(true);
-  } else {
-    console.log(false);
-  };
-} else {
-  console.log("ERROR")
-}   
+  case 'cavalo': console.log('move-se em forma de "L"');
+   break; 
+
+  case 'peão': console.log('move-se para frente, somente uma casa por vez');
+   break;
+  
+  case 'torre': console.log('move-se na horiontal e vertical');
+   break;
+   
+  case 'rei': console.log('move-se em todas as direções, uma casa por vez');
+   break;
+
+  default: console.log('ERROR 404') 
+}
