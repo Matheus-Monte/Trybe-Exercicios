@@ -1,11 +1,17 @@
-let number = 0
+let anguloA = 65;
+let anguloB = 100;
+let anguloC = 15;
 
-if(number > 0){
-  console.log("positivo");
-}
-else if(number < 0){
-  console.log("negativo");
-}
-else{
-  console.log("zero");
-}
+let somaDosAngulos = anguloA + anguloB + anguloC;
+
+let TodosAngulosPositivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
+
+if(TodosAngulosPositivos){
+  if(somaDosAngulos === 180) {
+    console.log(true);
+  } else {
+    console.log(false);
+  };
+} else {
+  console.log("ERROR")
+}   
