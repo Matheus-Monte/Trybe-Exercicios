@@ -1,23 +1,23 @@
-let pecaxadrez = 'rainha';
+let nota = 98;
 
-switch(pecaxadrez) {
-  case 'bispo': console.log('move-se na diagonal');
-   break;
-
-  case 'rainha': console.log('move-se em todas as direções');
-   break;
-
-  case 'cavalo': console.log('move-se em forma de "L"');
-   break; 
-
-  case 'peão': console.log('move-se para frente, somente uma casa por vez');
-   break;
-  
-  case 'torre': console.log('move-se na horiontal e vertical');
-   break;
-   
-  case 'rei': console.log('move-se em todas as direções, uma casa por vez');
-   break;
-
-  default: console.log('ERROR 404') 
-}
+if (nota < 0 || nota > 100){
+  console.log('ERROR')
+  }
+  else if(nota >= 90) {
+    console.log('A');
+  }
+  else if(nota >= 80) {
+    console.log('B');
+  }
+  else if(nota >= 70) {
+    console.log('C');
+  }
+  else if(nota >= 60) {
+    console.log('D');
+  }
+  else if(nota >= 50) {
+    console.log('E');
+  }
+  else {
+    console.log('F')
+  }
